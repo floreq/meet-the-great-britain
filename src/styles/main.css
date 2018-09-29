@@ -238,7 +238,7 @@ a {
 footer {
   margin-top: 1.7rem;
   padding-top: 1.7rem;
-  height: 20rem;
+  height: 13rem;
   border-top: 0.1rem solid #e2e8f3;
   background-color: #f8fafc;
 }
@@ -255,6 +255,8 @@ footer nav ul {
   padding: 0;
   list-style-type: none;
   line-height: 2;
+  color: #999999;
+  font-size: 16px;
 }
 footer nav h3 {
   margin: 0;
@@ -262,6 +264,9 @@ footer nav h3 {
 footer nav span {
   display: block;
   max-width: 15rem;
+  color: #999999;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .two-columns {
