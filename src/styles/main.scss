@@ -28,7 +28,7 @@ $lighter-blue: #e2e8f3;
 $light-gray: #999999;
 
 $separation: 1.7rem;
-$standard-padding: 1rem;
+$standard-padding: 2rem;
 $standard-max-width: 67rem;
 
 html, body {
@@ -59,6 +59,11 @@ a {
   color: $light-gray;
 }
 
+.bg-image {
+  background-image: url("../../images/london_big-ben.jpg");
+  background-size: cover;
+}
+
 .window-size-container {
   display: flex;
   justify-content: center;
@@ -70,6 +75,9 @@ a {
     position: absolute;
     top: 0;
     right: 0;
+    width: 100%;
+    text-align: right;
+    background-color: $color-white;
 
     nav {
       ul {
@@ -103,6 +111,57 @@ a {
   }
 }
 
+.hero-limit {
+  padding: 0 $standard-padding;
+  width: 100%;
+  max-width: $standard-max-width;
+}
+
+.button {
+  display: block;
+  margin: 5rem auto 0 auto;
+  padding: 0.7rem 2rem;
+  width: 8rem;
+  border-radius: 0.3rem;
+  font-size: $font-size__ms;
+  letter-spacing: 0.5px;
+  color: $color-white;
+  background-color: $main-blue;
+  box-shadow: 4px 6px 5px rgba(5, 122, 220, 0.14);
+  &:hover {
+    background-color: $dark-blue;
+  }
+}
+
+.hero-box {
+  padding: 2rem;
+  padding-bottom: 3rem;
+  width: 28rem;
+  text-align: left;
+  background-color: $color-white;
+  border-radius: 0.3rem;
+  box-shadow: 8px 9px 9px rgba(0, 0, 0, 0.3);
+
+  h1 {
+    margin-top: 0;
+  }
+
+  div {
+    font-size: $font-size__l;
+  }
+
+  .button {
+    margin: 2.5rem 0 0 0;
+    text-align: center;
+    box-shadow: none;
+  }
+
+  .hero-image {
+    margin-top: 7rem;
+    width: 25rem;
+  }
+}
+
 .hero {
   text-align: center;
 
@@ -115,22 +174,6 @@ a {
   div {
     color: $light-gray;
     font-size: $font-size__l;
-  }
-
-  .button {
-    display: block;
-    margin: 5rem auto 0 auto;
-    padding: 0.7rem 2rem;
-    width: 8rem;
-    border-radius: 0.3rem;
-    font-size: $font-size__ms;
-    letter-spacing: 0.5px;
-    color: $color-white;
-    background-color: $main-blue;
-    box-shadow: 4px 6px 5px rgba(5, 122, 220, 0.14);
-    &:hover {
-      background-color: $dark-blue;
-    }
   }
 
   .hero-image {
