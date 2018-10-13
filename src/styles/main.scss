@@ -14,6 +14,7 @@ $base-font-size: 18px;
 $font-size__xxl: ceil(2.888 * $base-font-size); // 52px
 $font-size__xl: ceil(2 * $base-font-size); // 36px
 $font-size__sl: ceil(1.666 * $base-font-size); // 30px
+$font-size__ml: ceil(1.555 * $base-font-size); // 28px
 $font-size__l: ceil(1.333 * $base-font-size); // 24px
 $font-size__m: ceil(1.111 * $base-font-size); // 20px
 $font-size__ms: ceil(1.000 * $base-font-size); // 18px
@@ -24,8 +25,11 @@ $main-black: #333333;
 $main-blue: #057adc;
 $dark-blue: #1582de;
 $light-blue: #f8fafc;
+$light-blue1: #b5d5ff;
 $lighter-blue: #e2e8f3;
-$light-gray: #999999;
+$light-gray: #999;
+$lighter-gray: #ccc;
+$lighter-gray1: #ddd;
 
 $separation: 1.7rem;
 $standard-padding: 2rem;
@@ -260,6 +264,80 @@ a {
         height: 0.25rem;
         background-color: $main-blue;
         border-radius: 1rem;
+      }
+    }
+  }
+
+  .news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+
+    .column-first,
+    .column-thirt {
+      .news-box:nth-child(even) {
+        background-color: $main-blue;
+        color: $color-white;
+
+        .news-date {
+          color: $light-blue1;
+        }
+
+        .news-logo {
+          border-top: solid 0.05rem $light-blue1;
+        }
+      }
+    }
+
+    .column-second {
+      margin-top: $standard-padding * 2;
+      .news-box:nth-child(odd) {
+        background-color: $main-blue;
+        color: $color-white;
+
+        .news-date {
+          color: $light-blue1;
+        }
+
+        .news-logo {
+          border-top: solid 0.05rem $light-blue1;
+        }
+      }
+    }
+
+    .column-thirt {
+      margin-top: $standard-padding * 4;
+    }
+
+    .news-box {
+      overflow: hidden;
+      margin: 2rem 0;
+      padding: 7%;
+      width: 86%;
+      text-align: left;
+      background-color: $color-white;
+      border-radius: 0.3rem;
+      box-shadow: 0px 0px 36px rgba(0, 0, 0, 0.15);
+
+      h3 {
+        font-size: $font-size__ml;
+      }
+
+      .news-date {
+        margin-bottom: 7%;
+        color: $lighter-gray;
+      }
+
+      .news-logo {
+        margin-left: 3%;
+        margin-right: -9%;
+        border-top: solid 0.05rem $lighter-gray;
+
+        img {
+          margin-left: -3%;
+          margin-top: 7%;
+          width: 8rem;
+        }
       }
     }
   }

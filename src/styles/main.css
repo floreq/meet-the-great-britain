@@ -33,7 +33,7 @@ h3 {
 
 a {
   text-decoration: none;
-  color: #999999;
+  color: #999;
 }
 
 .bg-image {
@@ -135,7 +135,7 @@ a {
   z-index: -1;
 }
 .hero div {
-  color: #999999;
+  color: #999;
   font-size: 24px;
 }
 .hero .hero-image {
@@ -155,7 +155,7 @@ a {
 .container article .subtitle {
   font-size: 24px;
   line-height: 1;
-  color: #999999;
+  color: #999;
 }
 .container article .charts {
   display: flex;
@@ -167,11 +167,11 @@ a {
   font-size: 24px;
 }
 .container article .pie-chart span {
-  color: #999999;
+  color: #999;
 }
 .container article .long-text {
   max-width: 28rem;
-  color: #999999;
+  color: #999;
   line-height: 1.36;
 }
 .container article .equation {
@@ -188,7 +188,7 @@ a {
 }
 .container article .equation .sum span {
   display: block;
-  color: #999999;
+  color: #999;
   font-size: 30px;
 }
 .container article .equation .sum span:first-of-type {
@@ -199,7 +199,7 @@ a {
 .container article .equation .sum .plus {
   margin: 0 1rem;
   align-self: flex-end;
-  color: #999999;
+  color: #999;
   font-size: 30px;
 }
 .container article .equation .sum-line {
@@ -208,6 +208,67 @@ a {
   height: 0.25rem;
   background-color: #057adc;
   border-radius: 1rem;
+}
+.container .news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+.container .news-grid .column-first .news-box:nth-child(even),
+.container .news-grid .column-thirt .news-box:nth-child(even) {
+  background-color: #057adc;
+  color: white;
+}
+.container .news-grid .column-first .news-box:nth-child(even) .news-date,
+.container .news-grid .column-thirt .news-box:nth-child(even) .news-date {
+  color: #b5d5ff;
+}
+.container .news-grid .column-first .news-box:nth-child(even) .news-logo,
+.container .news-grid .column-thirt .news-box:nth-child(even) .news-logo {
+  border-top: solid 0.05rem #b5d5ff;
+}
+.container .news-grid .column-second {
+  margin-top: 4rem;
+}
+.container .news-grid .column-second .news-box:nth-child(odd) {
+  background-color: #057adc;
+  color: white;
+}
+.container .news-grid .column-second .news-box:nth-child(odd) .news-date {
+  color: #b5d5ff;
+}
+.container .news-grid .column-second .news-box:nth-child(odd) .news-logo {
+  border-top: solid 0.05rem #b5d5ff;
+}
+.container .news-grid .column-thirt {
+  margin-top: 8rem;
+}
+.container .news-grid .news-box {
+  overflow: hidden;
+  margin: 2rem 0;
+  padding: 7%;
+  width: 86%;
+  text-align: left;
+  background-color: white;
+  border-radius: 0.3rem;
+  box-shadow: 0px 0px 36px rgba(0, 0, 0, 0.15);
+}
+.container .news-grid .news-box h3 {
+  font-size: 28px;
+}
+.container .news-grid .news-box .news-date {
+  margin-bottom: 7%;
+  color: #ccc;
+}
+.container .news-grid .news-box .news-logo {
+  margin-left: 3%;
+  margin-right: -9%;
+  border-top: solid 0.05rem #ccc;
+}
+.container .news-grid .news-box .news-logo img {
+  margin-left: -3%;
+  margin-top: 7%;
+  width: 8rem;
 }
 .container .circle-infographic {
   display: grid;
@@ -259,7 +320,7 @@ a {
   max-width: 24rem;
 }
 .container .circle-infographic span {
-  color: #999999;
+  color: #999;
   line-height: 1.36;
 }
 .container .circle-in-circle {
@@ -301,7 +362,7 @@ footer nav ul {
   padding: 0;
   list-style-type: none;
   line-height: 2;
-  color: #999999;
+  color: #999;
   font-size: 16px;
 }
 footer nav h3 {
@@ -310,7 +371,7 @@ footer nav h3 {
 footer nav span {
   display: block;
   max-width: 15rem;
-  color: #999999;
+  color: #999;
   font-size: 16px;
   line-height: 1.5;
 }
