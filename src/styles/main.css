@@ -209,6 +209,46 @@ a {
   background-color: #057adc;
   border-radius: 1rem;
 }
+.container article .news-title {
+  margin-top: 2rem;
+  width: 28rem;
+}
+.container article .news-title .read-more {
+  color: #057adc;
+  font-size: 20px;
+  cursor: pointer;
+}
+.container article .news-text {
+  margin-top: 2rem;
+  color: #999;
+}
+.container article .news-text span {
+  line-height: 1.7;
+}
+.container article .news-text .author-info {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  color: #333333;
+}
+.container article .news-text .author-info .author-image {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+}
+.container article .news-text .author-info .author {
+  margin-left: 1rem;
+}
+.container article .news-text .author-info .author .date-separation {
+  margin: 0.2rem 0;
+  width: 2rem;
+  height: 0.2rem;
+  background-color: #057adc;
+  border-radius: 0.3rem;
+}
+.container article .news-text .author-info .author .date {
+  color: #ccc;
+}
 .container .news-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -252,6 +292,7 @@ a {
   background-color: white;
   border-radius: 0.3rem;
   box-shadow: 0px 0px 36px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
 .container .news-grid .news-box h3 {
   font-size: 28px;
@@ -268,7 +309,7 @@ a {
 .container .news-grid .news-box .news-logo img {
   margin-left: -3%;
   margin-top: 7%;
-  width: 8rem;
+  width: 6rem;
 }
 .container .circle-infographic {
   display: grid;

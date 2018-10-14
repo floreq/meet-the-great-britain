@@ -266,6 +266,56 @@ a {
         border-radius: 1rem;
       }
     }
+
+    .news-title {
+      margin-top: $standard-padding;
+      width: 28rem;
+
+      .read-more {
+        color: $main-blue;
+        font-size: $font-size__m;
+        cursor: pointer;
+      }
+    }
+
+    .news-text {
+      margin-top: $standard-padding;
+      color: $light-gray;
+
+      span {
+        line-height: 1.7;
+      }
+
+      .author-info {
+        display: flex;
+        align-items: center;
+        margin-top: $standard-padding;
+        color: $main-black;
+
+        .author-image {
+          $author-image_size: 3.5rem;
+
+          width: $author-image_size;
+          height: $author-image_size;
+          border-radius: 50%;
+        }
+        .author {
+          margin-left: 1rem;
+
+          .date-separation {
+            margin: 0.2rem 0;
+            width: 2rem;
+            height: 0.2rem;
+            background-color: $main-blue;
+            border-radius: 0.3rem;
+          }
+
+          .date {
+            color: $lighter-gray;
+          }
+        }
+      }
+    }
   }
 
   .news-grid {
@@ -318,6 +368,7 @@ a {
       background-color: $color-white;
       border-radius: 0.3rem;
       box-shadow: 0px 0px 36px rgba(0, 0, 0, 0.15);
+      cursor: pointer;
 
       h3 {
         font-size: $font-size__ml;
@@ -336,7 +387,7 @@ a {
         img {
           margin-left: -3%;
           margin-top: 7%;
-          width: 8rem;
+          width: 6rem;
         }
       }
     }
